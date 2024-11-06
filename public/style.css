@@ -1,0 +1,138 @@
+/* Basic Styling */
+body {
+    background-color: #fff0f6; /* Very light pink background */
+    color: #4a4a4a; /* Soft, dark grey for readability */
+    font-family: 'Roboto Mono', monospace; /* Poppins font throughout the site */
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+.container {
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Headers styled with deeper pink tones */
+h1, h2 {
+    color: #ff69b4; /* Bright pink for major headings */
+    font-weight: 600; /* Slightly bolder font weight for headers */
+    margin-bottom: 0.5em;
+}
+
+/* Navigation and links */
+.nav-link {
+    color: #ff1493; /* Deep pink */
+    font-size: 18px;
+}
+
+.nav-link:hover, .nav-link:focus {
+    color: #ffb6c1; /* Light pink for hover */
+    text-decoration: none;
+}
+
+/* Profile image styling */
+.img-profile {
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+    object-fit: cover;
+    border: 5px solid #fff; /* White border */
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+/* Cards for projects with soft shadows and pink accents */
+.card {
+    background-color: #fdeef4; /* Very light pink card backgrounds */
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.06);
+    margin-bottom: 20px;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-img-top {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 15px;
+}
+
+.card-title {
+    color: #ff1493; /* Deep pink */
+}
+
+.card-text {
+    font-size: 0.9rem;
+    color: #666; /* Grey for text to maintain readability */
+}
+
+/* Footer with a darker shade for contrast */
+footer {
+    background-color: #ff1493; /* Deep pink */
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .img-profile {
+        width: 100px;
+        height: 100px;
+    }
+}
+html, body {
+    height: 100%; /* Important for flex to work properly */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.site-wrapper {
+    display: grid;
+    grid-template-rows: auto 1fr auto; /* Header, content, footer */
+    min-height: 100vh; /* Full height of the viewport */
+}
+
+.container {
+    padding: 20px;
+}
+
+footer {
+    background-color: #ff85c6; /* Light grey for contrast */
+    color: #333;
+    text-align: center;
+    padding: 0px 0;
+    width: 100%;
+    clear: both;
+    position: relative;
+    height: 200px;
+    margin-top: 20px;
+    
+}
+
+.footer-link {
+    color: #ff1493;
+    margin: 0 0px;
+    text-decoration: none;
+}
+
+.footer-link:hover, .footer-link:focus {
+    color: #ffb6c1;
+    text-decoration: underline;
+}
